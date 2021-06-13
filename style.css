@@ -1,0 +1,59 @@
+:root {
+  --animation-time: 2.5s;
+}
+
+#name {
+  transform: translateY(-30%);
+  opacity: 0;
+  animation: fadeInUp var(--animation-time) forwards infinite;
+}
+
+@keyframes fadeInUp {
+  40% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+}
+
+#left-arrow {
+  transform: translateX(-20%);
+  opacity: 0;
+  animation: fadeInLeft var(--animation-time) ease forwards infinite;
+  /* animation-delay: 0.5s; */
+}
+
+@keyframes fadeInLeft {
+  40% {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+}
+
+#right-arrow {
+  transform: translateX(20%);
+  opacity: 0;
+  animation: fadeInRight var(--animation-time) ease forwards infinite;
+  /* animation-delay: 0.5s; */
+}
+
+@keyframes fadeInRight {
+  40% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(30%);
+  }
+}
