@@ -1,0 +1,63 @@
+:root {
+  --animation-time: 1.5s;
+}
+
+#name {
+  transform-box: fill-box;
+  transform-origin: center;
+  /* animation: grow 5s ease forwards infinite; */
+}
+
+@keyframes grow {
+  40% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+#Vector {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rotate var(--animation-time) linear forwards infinite;
+}
+
+#Vector_4 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rotate var(--animation-time) linear forwards infinite;
+  animation-delay: 0.1s;
+}
+
+#Vector_5 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rotate var(--animation-time) linear forwards infinite;
+  animation-delay: 0.2s;
+}
+
+#Vector_2 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rotate var(--animation-time) linear forwards infinite;
+  animation-delay: 0.3s;
+}
+
+#Vector_3 {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: rotate var(--animation-time) linear forwards infinite;
+  animation-delay: 0.4s;
+}
+
+@keyframes rotate {
+  10% {
+    transform: translateY(-40%);
+  }
+
+  20% {
+    transform: translateY(0%);
+  }
+}
